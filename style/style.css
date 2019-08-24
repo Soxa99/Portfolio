@@ -76,9 +76,9 @@ html {
 
 aside {
     position: fixed;
-    right: -300px;
+    right: -100vw;
     top: 0;
-    width: 300px;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(50, 51, 50);
     transition: 0.2s linear;
@@ -118,7 +118,7 @@ li {
 li::after {
     content: "";
     display: block;
-    margin: 50px auto;
+    margin: 6vh auto;
     background-color: #13cf13;
     opacity: 1;
     height: 4px;
