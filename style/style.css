@@ -4,9 +4,51 @@
     box-sizing: border-box;
 }
 
-/* Menu burger */
 html {
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
+    --ColorLine: #13cf13;
+    --ColorText: #ddd;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    padding: 20px;
+    color: var(--ColorText);
+    text-align: center;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--ColorLine);
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 2px;
+    background-color: var(--ColorLine);
+}
+
+/* Menu burger */
+
+
+body {
+    background-color: #555;
 }
 
 .burger {
@@ -70,17 +112,13 @@ html {
     left: 0;
 }
 
-.burger.active div {
-    background-color: white;
-}
-
 aside {
     position: fixed;
     right: -100vw;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: 0.2s linear;
     z-index: 1;
 }
@@ -120,7 +158,7 @@ li::after {
     content: "";
     display: block;
     margin: 6vh auto;
-    background-color: #13cf13;
+    background-color: var(--ColorLine);
     opacity: 1;
     height: 4px;
     border-radius: 2px;
@@ -137,7 +175,7 @@ li:last-child::after {
 }
 
 li a {
-    color: #13cf13;
+    color: var(--ColorLine);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 30px;
@@ -168,9 +206,10 @@ li a {
 }
 
 /* Header */
+
 header div {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -185,7 +224,7 @@ header div img {
 
 }
 
-header div div {
+header div div.headerText {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -198,7 +237,37 @@ header div h1 {
     top: 50%;
     transform: translateY(-50%);
     padding: 1vw;
-    font-size: 30px;
     text-align: center;
-    color: white;
+    color: var(--ColorText);
+}
+
+header div.arrow {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translateX(-50%);
+}
+
+header i {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: var(--ColorText);
+    transform: translateY(-50%);
+}
+
+header i:hover {
+    cursor: pointer;
+}
+
+/* section about me */
+section.aboutMe {
+    width: 80%;
+    margin: auto;
 }

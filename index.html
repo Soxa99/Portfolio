@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
+<!-- animacja: strzałka w header skacząca -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Adrian Socha</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -20,24 +24,28 @@
         <nav>
             <ul>
                 <li><a href="#">O mnie</a></li>
-                <li><a href="#">projekty</a></li>
+                <li><a href="#">Umiejętności</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </aside>
-
     <header>
         <div><img src="images/header_background.jpg" alt="">
-            <div>
+            <div class="headerText">
                 <h1>Cześć, <br> nazywam się Adrian. <br> Początkujący FrontEnd Developer.</h1>
             </div>
+            <div class="arrow"><i class="fas fa-arrow-down"></i></div>
         </div>
     </header>
     <section class="aboutMe">
         <h2>O mnie</h2>
+        <p>Jestem absolwentem Technikum Informatycznego. Szkoła wzbudziła u mnie większe zainteresowanie tworzeniem
+            stron internetowych i moje nowe hobby. Rozwijam swoje umiejętności za pomocą kursów online na platformie
+            udemy.</p>
+        <div class="showCV"></div>
+        <div class="downloadCV"></div>
     </section>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
