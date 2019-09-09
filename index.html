@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <!-- animacja: strzałka w header skacząca -->
+<!-- dodać wysuwającą kreske z hamburgera na desktop -->
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,6 @@
 </head>
 
 <body>
-    <!-- Menu burger -->
     <div class="burger">
         <div></div>
         <div></div>
@@ -24,12 +24,13 @@
         <nav>
             <ul>
                 <li><a href="#">O mnie</a></li>
-                <li><a href="#">Umiejętności</a></li>
+                <li><a href="#">Technologie</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </aside>
+
     <header>
         <div><img src="images/header_background.jpg" alt="">
             <div class="headerText">
@@ -38,6 +39,7 @@
             <div class="arrow"><i class="fas fa-arrow-down"></i></div>
         </div>
     </header>
+
     <section class="aboutMe">
         <h2>O mnie</h2>
         <p>Jestem absolwentem Technikum Informatycznego. Szkoła wzbudziła u mnie większe zainteresowanie tworzeniem
@@ -46,6 +48,7 @@
         <div class="showCV"></div>
         <div class="downloadCV"></div>
     </section>
+
     <section class="technologies">
         <h2>Technologie</h2>
         <div><img src="images/html5.png" alt="html5"></div>
@@ -57,6 +60,23 @@
         <div><img src="images/Sass.png" alt="Sass"></div>
     </section>
 
+    <section class="form">
+        <form action="mailto:adriansocha1999@gmail.com">
+            <label>Imię i nazwisko / Nazwa firmy
+                <input type="text" name="client" required>
+            </label>
+            <label>Temat <input type="text" name="topic" required></label>
+            <textarea name="comment" cols="30" rows="10" Placeholder="Co chcesz mi napisać?" required></textarea>
+            <input class="submit" type="submit" value="Wyślij">
+
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy Adrian Socha</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="javascript/script.js"></script>
