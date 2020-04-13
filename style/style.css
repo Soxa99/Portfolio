@@ -6,7 +6,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    --ColorLine: #13cf13;
+    --ColorLine: #f87000fd;
     --ColorText: #ddd;
 }
 
@@ -89,6 +89,10 @@ body {
 
 .burger.active {
     overflow: visible;
+}
+
+.burger.active div {
+    background-color: var(--ColorLine);
 }
 
 .burger.active div:nth-of-type(1) {
